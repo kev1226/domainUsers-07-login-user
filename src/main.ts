@@ -7,6 +7,8 @@ async function bootstrap() {
 
   app.setGlobalPrefix('api/users');
 
+  // Enable CORS for all origins
+
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
