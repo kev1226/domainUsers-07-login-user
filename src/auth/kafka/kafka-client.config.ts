@@ -7,7 +7,7 @@ export const kafkaClientConfig: ClientsModuleOptions = [
     transport: Transport.KAFKA,
     options: {
       client: { clientId: 'auth-service-login', brokers: ['3.232.44.31:9092'] },
-      consumer: { groupId: 'auth-service-login-group' },
+      consumer: { groupId: 'auth-service-login-client-group' },
     },
   },
 ];
