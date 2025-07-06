@@ -28,7 +28,7 @@ jobs:
             echo "tag=latest" >> $GITHUB_OUTPUT
           fi
 
-      - name: Install dependencies and run tests
+      - name: Install dependencies and run tests.
         uses: actions/setup-node@v3
         with:
           node-version: 18
