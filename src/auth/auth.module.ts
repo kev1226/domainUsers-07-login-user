@@ -12,7 +12,7 @@ import { kafkaClientConfig } from './kafka/kafka-client.config';
     JwtModule.register({
       global: true,
       secret: jwtConstants.secret, // Secret key for signing JWTs,
-      signOptions: { expiresIn: '1h' }, // Token expiration time
+      signOptions: { expiresIn: '5h' }, // Token expiration time
     }),
   ],
   controllers: [AuthController],
